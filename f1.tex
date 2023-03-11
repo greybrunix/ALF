@@ -1,0 +1,52 @@
+\relax
+\input /home/bdg/Templates/center.tex
+\input /home/bdg/Templates/nsets.tex
+\bf
+\startcenter
+{\obeylines
+Aut\'omatos e Linguagens Formais
+Bruno Dias da Gi\~ao
+Licenciatura em Ci\^encias da Computa\c{c}\~ao
+\par\ \par\rm \sl Manuscrito realizado usando \TeX.
+\par\ \par
+\bf
+Resolu\c{c}\~ao de Exerc\'{\i}cios
+\rm\par\par
+}
+\stopcenter
+\par\ \par
+\bf Linguagens Formais e Express\~oes Regulares \rm
+\par
+\bf 1.1.\ \rm Seja $A = \{a,b\}$. Determine o n\'umero de palavras sobre A tais que:
+\par\ \bf 1.1.a.\ \rm o comprimento \'e 3;
+\par
+\ \ \ $\bullet$\ \ existem duas palavras $u$ com uma apenas letra, isto \'e, `aaa' e `bbb';\par
+\ \ \ $\bullet$\ \ existem tr\^es palavras $u$ com $|u|_a$ = 2, isto \'e, `aab', `aba' e `baa';\par
+\ \ \ $\bullet$\ \ existem tr\^es palavras $u$ com $|u|_b$ = 2, isto \'e, `bba', `aba' e `abb';\par
+\ \ \ Logo, existem 8 palavras $u \in A^\ast$, tq $|u| = 3$.
+\par\ \bf 1.1.b.\ \rm o comprimento n\~ao excede 3; 
+\par
+\ \ \ $\bullet$\ \ Temos 8 palavras $u \in A^\ast$, tq $|u| = 3$;\par
+\ \ \ $\bullet$\ \ Temos 1 palavra $u$ com $|u| = 0$: `$\epsilon$';\par
+\ \ \ $\bullet$\ \ Temos 2 palavras $u$ com $|u| = 1$: `a' e `b';\par
+\ \ \ $\bullet$\ \ Temos 4 palavras $u$ com $|u| = 2$: `aa', `bb', `ab' e `ba';\par
+\ \ \ Logo, existem 15 palavras $u \in A^\ast$, tq $|u| \le 3$.
+\par\ \bf 1.1.c\ \rm o comprimento n\~ao excede um dado $n \in \bbb N$.\par
+\ \ $\,\,\,\bullet$\ \ Nas al\'ineas anteriores, podemos reparar num 
+detalhe de como o n\'umero de palavras evolui conforme o seu comprimento,
+isto \'e, $|A|^{|u|}$;\par
+\ \ \ $\bullet$\ \ Sendo assim, poderemos afirmar que o valor que pretendemos ser\'a obtido por:
+\startcenter
+$\sum_{|u|=0}^{n}\, (|A|^{|u|})$.
+\stopcenter
+\par\ \par
+\bf 1.2.\ \rm Responda ao exerc\'{\i}cio anterior onde $A$ \'e um alfabeto com $n$ letras.
+\par
+\ \ \ Como vimos no exerc\'{\i}cio anterior, o n\'umero de palavras de comprimento $m$
+num alfabeto com $n$ letras ser\'a determinado pela formula: $n^{m}$;\par
+\ \ \ \bf a. \rm $n^{3}$;\par
+\ \ \ \bf b. \rm $\sum_{|u|=0}^{3}\, (n^{|u|})$;\par
+\ \ \ \bf c. \rm $\sum_{|u|=0}^{m}\, (n^{|u|})$.\par
+
+
+\bye
